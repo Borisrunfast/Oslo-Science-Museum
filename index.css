@@ -1,0 +1,71 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-weight: 900;
+    letter-spacing: .05rem;
+}
+
+p {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden ;
+}
+
+.article {
+    width: 60%;
+    max-width: 1000px;
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+    box-shadow: 1px 2px 5px rgb(88, 88, 88);
+}
+
+.btn {
+    font-size: 1rem;
+    padding: .4rem 1.4rem;
+    color: whitesmoke;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-top: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover {
+    filter: brightness(.9);
+}
+.btn:active {
+    filter: brightness(1.1);
+}
+
+@media only screen and (max-width: 1000px) { 
+
+    .hide-mobile {
+        display: none;
+    }
+    .article {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 1000px) { 
+    .hide-desktop{
+        display: none;
+    }
+}

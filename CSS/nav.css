@@ -1,0 +1,102 @@
+.header {
+    width: 100vw;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: #030303;
+}
+
+.header-inner {
+    width: 60vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    padding-left: 1rem;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.header div {
+    display: flex;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.header a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.nav-desktop {
+    display: flex;
+}
+.nav-desktop li {
+    list-style: none;
+    padding-right: 1rem;
+}
+
+/*Mobile*/
+.nav-mobile {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #030303;
+    height: calc(100vh - 66px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-mobile-items {
+    padding-left: 1rem;
+}
+
+.nav-mobile-items li {
+    padding-bottom: .25rem;
+}
+
+.nav-mobile ul li {
+    list-style: none;
+    padding-right: 1rem;
+}
+
+.nav-mobile-bottom {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.nav-mobile-bottom div {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+.nav-mobile-bottom div img {
+    width: 20%;
+}
+
+.nav-mobile-bottom a {
+    padding: 0 1rem 0 1rem;
+}
+
+details > summary {
+    list-style: none;
+}
+
+
+@media only screen and (max-width: 1000px) { 
+    .header-inner {
+        width: 80%;
+    }
+}

@@ -1,0 +1,19 @@
+article.terms-article {
+    margin-top: 6rem;
+
+}
+
+article.terms-article, article.privacy-article {
+    color: #030303;
+    text-shadow: none;
+}
+
+article.terms-article h4, article.privacy-article h4 {
+    font-size: 1.75rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+article.terms-article li, article.privacy-article li {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1.25rem;
+}

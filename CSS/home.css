@@ -1,0 +1,211 @@
+body {
+    background-color: #E2E2E2;
+}
+
+.hero {
+    background-image: url(../Images/hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 40vw;
+    max-height: 400px;
+    min-height: 200px;
+    margin-top: 60px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero h2 {
+    font-size: 5vw;
+    margin-top: -60px;
+    mix-blend-mode: difference;
+    
+}
+
+
+
+/*-------------Mammoth---------------*/
+.mammoth-article::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFAD33;
+}
+
+.mammoth-article::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    transform:skew(3deg, 3deg) rotate(3deg);
+    width: 100%;
+    height: 100%;
+    background-color: #171C3C;
+}
+
+.mammoth-article {
+    background-color: #FFAD33;
+    margin: -4rem auto 0 auto !important; 
+}
+
+
+.article h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+.mammoth-top {
+    margin: -1rem;
+    padding: 1rem;
+    padding-bottom: 3rem ;
+    margin-bottom: -3rem;
+    background-image: linear-gradient(#FFAD33, #FFAD33), url(../Images/william-bout.png) ;
+    background-blend-mode: multiply;
+    background-position: left;
+}
+
+.mammoth {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'text img'
+    'para img';
+    column-gap: 1rem;
+}
+
+.mammoth h4 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.mammoth img {
+    width: 100%;
+    min-width: 240px;
+    max-width: 500px;
+    box-shadow: 1px 1px 5px black;
+    grid-area: img;
+}
+
+.mammoth-btn {
+    background-color: #CC8C2D;
+}
+
+.mammoth-article a {
+    cursor:default;
+}
+
+/*-------------------NEW-------------------*/
+
+.new-article::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    transform:skew(3deg, 3deg) rotate(3deg);
+    width: 100%;
+    height: 50%;
+    background-color: #E2E2E2;
+}
+
+.new-article {
+    background-color: #171C3C;
+}
+.new {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'img text'
+    'img para'
+    'img btn';
+    column-gap: 1rem;
+}
+
+.new img {
+    grid-area: img;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.new h4 {
+    font-size: 3rem;
+    margin: 0;;
+}
+
+.new-btn {
+    background-color: #6378FF;
+}
+
+.new-article a {
+    cursor:default;
+}
+
+/*-----------------VISIT----------------*/
+
+article.visit-article {
+    color: black;
+    text-shadow: 3px 3px 3px #C1C1C1;
+    background-color: #E2E2E2;
+}
+
+.visit {
+    width: 100%;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.visit h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 1rem ;
+}
+
+.visit img {
+    width: 100%;
+    max-width: 300px;
+    grid-area: img;
+    box-shadow: -5px -5px 5px #C1C1C1;
+    object-fit: cover;
+}
+
+button.visit-btn {
+    background-color: #C1C1C1;
+    color: black;
+}
+
+.visit-article a {
+    cursor:default;
+}
+@media only screen and (max-width: 1000px) { 
+    .hero h2 {
+        font-size: 9vw;
+    }
+
+    .mammoth {
+        display: block;
+    }
+
+
+    .new {
+        display: block;
+    }
+    .new img {
+        display: block;
+        margin: 0 auto;
+    }
+    .new h4 {
+        font-size: 2rem;
+    }
+
+    .visit {
+        flex-direction: column;
+    }
+}
